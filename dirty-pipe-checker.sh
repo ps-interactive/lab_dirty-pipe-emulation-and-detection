@@ -5,7 +5,7 @@
 kernel=$1
 major=$(echo ${kernel:-$(uname -r | cut -d '-' -f1)} | cut -d '.' -f1)
 minor=$(echo ${kernel:-$(uname -r | cut -d '-' -f1)} | cut -d '.' -f2)
-minor=$(echo ${kernel:-$(uname -r | cut -d '-' -f1)} | cut -d '.' -f3)
+patch=$(echo ${kernel:-$(uname -r | cut -d '-' -f1)} | cut -d '.' -f3)
 echo $major $minor $patch
 if (( ${major:-0} < 5 )) ||
    (( ${major:-0} == 5 && ${minor:-0} < 8 )) ||
