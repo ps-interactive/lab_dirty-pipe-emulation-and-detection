@@ -2,14 +2,14 @@ nodes:
 	# Wazuh indexer nodes  
 	indexer:   
 		 - name: node-1     
-			 ip: <indexer-node-ip>    
+			 ip: 172.31.24.165    
 
 	# Wazuh server node
 	server:  
 		 - name: wazuh-1      
-			ip: <wazuh-manager-ip>    
+			ip: 172.31.24.165     
 
 	# Wazuh dashboard nodes  
 	dashboard:  
 		- name: dashboard      
-			ip: <dashboard-node-ip>
+			ip: 172.31.24.165 
