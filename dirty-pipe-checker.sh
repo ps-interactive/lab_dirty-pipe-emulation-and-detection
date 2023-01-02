@@ -1,7 +1,7 @@
 #!/bin/bash
 # usage
-# Check current kernel version ./dpipe.sh
-# Check specific kernel version ./dpipe.sh 5.10.102
+# Check current kernel version ./dirty-pipe-checker.sh
+# Check specific kernel version ./dirty-pipe-checker.sh 5.10.102
 kernel=$1
 major=$(echo ${kernel:-$(uname -r | cut -d '-' -f1)} | cut -d '.' -f1)
 minor=$(echo ${kernel:-$(uname -r | cut -d '-' -f1)} | cut -d '.' -f2)
